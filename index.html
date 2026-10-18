@@ -22,9 +22,9 @@
             <li><a class="menu-elements" href="#contacts">Контакти</a></li>
         </ul>
         <div class="header-actions">
-            <a class="action-item" href="#catalog">
+            <button type="button" class="action-item search-toggle" id="search-toggle" aria-label="Відкрити пошук">
                 <img src="Без названия534_20261009200952.png" alt="Пошук">
-            </a>
+            </button>
             <a class="action-item" href="#contacts">
                 <img src="Без названия534_20261009200957.png" alt="Профіль">
             </a>
@@ -86,6 +86,11 @@
                     Переглянути всі →
                 </a>
             </div>
+            <div class="catalog-search" id="catalogSearch" hidden>
+                <input type="text" id="searchInput" placeholder="Пошук товарів...">
+                <button id="clearSearch">Очистити</button>
+                <p id="searchMessage"></p>
+            </div>
             <div class="popular-grid">
                 <div class="product-card">
                     <span class="badge hit">Хіт</span>
@@ -130,6 +135,78 @@
                         ★★★★★ <span>(21)</span>
                     </div>
                     <div class="product-price">6 990 ₴</div>
+                    <button type="button" class="buy-button">
+                        Додати в кошик
+                    </button>
+                </div>
+                <div class="product-card">
+                    <span class="badge new">Новинка</span>
+                    <img src="Без названия549_20261018131025.png" alt="Телескоп Sky-Watcher P130EQ">
+                    <h3>Телескоп Sky-Watcher P130EQ 130/650</h3>
+                    <div class="product-rating">
+                        ★★★★★ <span>(4)</span>
+                    </div>
+                    <div class="product-price">15 400 ₴</div>
+                    <button type="button" class="buy-button">
+                        Додати в кошик
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="Без названия549_20261018131040.png" alt="Бінокль Celestron SkyMaster 15x70">
+                    <h3>Бінокль Celestron SkyMaster 15x70</h3>
+                    <div class="product-rating">
+                        ★★★★★ <span>(9)</span>
+                    </div>
+                    <div class="product-price">10 416 ₴</div>
+                    <button type="button" class="buy-button">
+                        Додати в кошик
+                    </button>
+                </div>
+                <div class="product-card">
+                    <span class="badge popular">Популярний</span>
+                    <img src="Без названия549_20261018131045.png" alt="Бінокль Sigeta Farland 7x50">
+                    <h3>Бінокль Sigeta Farland 7x50</h3>
+                    <div class="product-rating">
+                        ★★★★★ <span>(7)</span>
+                    </div>
+                    <div class="product-price">2 232 ₴</div>
+                    <button type="button" class="buy-button">
+                        Додати в кошик
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <img src="Без названия549_20261018131049.png" alt="Штатив Celestron TrailSeeker">
+                    <h3>Штатив Celestron TrailSeeker</h3>
+                    <div class="product-rating">
+                        ★★★★★ <span>(3)</span>
+                    </div>
+                    <div class="product-price">7 000 ₴</div>
+                    <button type="button" class="buy-button">
+                        Додати в кошик
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge new">Новинка</span>
+                    <img src="Без названия549_20261018131056.png" alt="Адаптер Celestron NexYZ DX">
+                    <h3>Адаптер Celestron NexYZ DX для смартфона</h3>
+                    <div class="product-rating">
+                        ★★★★★ <span>(11)</span>
+                    </div>
+                    <div class="product-price">1 961 ₴</div>
+                    <button type="button" class="buy-button">
+                        Додати в кошик
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <img src="Без названия549_20261018131101.png" alt="Набір окулярів і фільтрів Celestron">
+                    <h3>Набір окулярів і фільтрів Celestron</h3>
+                    <div class="product-rating">
+                        ★★★★★ <span>(5)</span>
+                    </div>
+                    <div class="product-price">19 599 ₴</div>
                     <button type="button" class="buy-button">
                         Додати в кошик
                     </button>
@@ -198,8 +275,7 @@
         <div class="footer-bottom">
             <p>© 2026 NOVA. Всі права захищені.</p>
         </div>
-
     </footer>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>  
